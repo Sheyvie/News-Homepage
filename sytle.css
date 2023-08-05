@@ -8,6 +8,8 @@ body {
   /* align-items: center; */
   background-color: hsl(36, 100%, 99%);
   font-family: "Inter";
+  height: 1000px;
+  overflow: hidden;
 }
 .top {
   margin: 0;
@@ -27,12 +29,11 @@ a:hover {
   color: hsl(5, 85%, 63%);
 }
 .container {
-  height: 1000px;
   width: 1000px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: 250px 200px 200px;
+  grid-template-rows: 200px 150px 150px;
   grid-template-areas: "design design new" "sum content new" "retro laptops gaming ";
   gap: 20px;
 }
@@ -42,7 +43,7 @@ a:hover {
 }
 .img-design img {
   width: 620px;
-  height: 250px;
+  height: 200px;
 }
 .new {
   grid-area: new;
@@ -52,9 +53,18 @@ a:hover {
   color: hsl(35, 77%, 62%);
   margin-left: 0.5em;
 }
+.new p {
+  color: white;
+  font-weight: 300;
+}
+hr {
+  margin-top: 20px;
+}
 p {
-  color: hsl(233, 8%, 79%);
+  color: hsl(236, 13%, 42%);
   font-size: 12px;
+  font-weight: 500;
+  padding: 10px;
 }
 h2 {
   color: hsl(233, 8%, 79%);
@@ -68,24 +78,47 @@ h2 {
 .sum h2 {
   color: black;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 40px;
+  padding: 0px;
 }
 .content {
   grid-area: content;
 }
-.img-icon img {
-  position: relative;
-  height: 200px;
-  width: 150px;
-  left: 0px;
+button {
+  height: 40px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 180px;
+  align-content: flex-start;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: hsl(5, 85%, 63%);
+  border: 0px;
+  margin-left: 10px;
 }
-
-.info {
-  position: absolute;
+button:hover {
+  background-color: black;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.options a {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.img-icon img {
+  width: 100px;
+  height: 120px;
+  padding: 0px;
 }
 .retro {
   grid-area: retro;
 }
+
 .laptops {
   grid-area: laptops;
 }
