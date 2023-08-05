@@ -53,6 +53,9 @@ a:hover {
   color: hsl(35, 77%, 62%);
   margin-left: 0.5em;
 }
+.new h2:hover {
+  color: hsl(35, 77%, 62%);
+}
 .new p {
   color: white;
   font-weight: 300;
